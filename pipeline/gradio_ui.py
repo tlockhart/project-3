@@ -15,12 +15,12 @@ pip install torch
 python userInterface.py
 pip install pyarrow
 
-python userInterface.py
-
 Create a .env file in the root directory with the following variables:
 GEMINI_API_KEY= Enter your Google GEMINI_API_Key
 REPO_ID = "tlockhart/philly_reviews_with_mood.parquet"
 FILE_NAME = "philly_reviews_with_mood.parquet"
+
+Run Gradio: python gradio_ui.py
 """
 
 import gradio as gr
@@ -34,14 +34,14 @@ if customer_reviews_df is None:
 
 # Mood images (✅ exactly yours)
 mood_images = [
-    ("Adventurous", "https://www.kidsmentalhealthfoundation.org/-/media/onoursleeves/gifs/800x800/smile.ashx"),
-    ("Comforting", "https://preview.redd.it/gif-happy-to-traumatized-emoji-v0-13hwbld3o0od1.gif?width=747&auto=webp&s=62bbeadbe616ad5560964f2755e5e48d1bbb7574"),
-    ("Energizing", "https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/646344ff56798eaf94d4722b_43.png"),
-    ("Romantic", "https://www.kidsmentalhealthfoundation.org/-/media/onoursleeves/gifs/800x800/smile.ashx"),
-    ("Cozy", "https://preview.redd.it/gif-happy-to-traumatized-emoji-v0-13hwbld3o0od1.gif?width=747&auto=webp&s=62bbeadbe616ad5560964f2755e5e48d1bbb7574"),
-    ("Festive", "https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/646344ff56798eaf94d4722b_43.png"),
-    ("Indulgent", "https://preview.redd.it/gif-happy-to-traumatized-emoji-v0-13hwbld3o0od1.gif?width=747&auto=webp&s=62bbeadbe616ad5560964f2755e5e48d1bbb7574"),
-    ("Refreshing", "https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/646344ff56798eaf94d4722b_43.png"),
+    ("Adventurous", "https://thumbs.dreamstime.com/b/cute-pirate-smiley-wearing-black-pirate-scarf-eye-patch-emoticon-emoji-vector-illustration-96990738.jpg"),
+    ("Comforting", "https://previews.123rf.com/images/yayayoy/yayayoy1305/yayayoy130500001/19481706-dreamy-emoticon-with-his-head-propped-by-his-hands.jpg"),
+    ("Energizing", "https://previews.123rf.com/images/suslo/suslo1304/suslo130400008/18953821-yellow-sign-of-emotion-with-a-mohawk-and-hands.jpg"),
+    ("Romantic", "https://previews.123rf.com/images/yayayoy/yayayoy1602/yayayoy160200012/52420163-male-emoticon-blowing-a-kiss.jpg"),
+    ("Cozy", "https://previews.123rf.com/images/yayayoy/yayayoy1205/yayayoy120500007/13629388-meditating-emoticon.jpg"),
+    ("Festive", "https://thumbs.dreamstime.com/b/christmas-emoticon-bell-27501954.jpg"),
+    ("Indulgent", "https://previews.123rf.com/images/yayayoy/yayayoy1210/yayayoy121000009/15836615-emoticon-eating-an-apple.jpg"),
+    ("Refreshing", "https://png.pngtree.com/thumb_back/fh260/background/20241030/pngtree-happy-emoji-made-of-water-droplets-refreshing-playful-design-with-reflective-image_16473684.jpg"),
 ]
 
 def getSuggestion(mood):
