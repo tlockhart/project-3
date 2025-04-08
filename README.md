@@ -86,6 +86,16 @@ Make sure the following models/downloads are available:
 
 ## 🧪 Model Evaluation
 
+Throughout the project, we iterated through **three different model strategies**, each adding more nuance and control:
+
+1. **Gemini-only Recommendation**: Initially, we used Google’s Gemini to generate a recommendation directly from the user's mood. While powerful and simple, it provided no explainability or customization.
+
+2. **Zero-Shot Classification**: We added a layer of interpretability by analyzing the sentiment or mood expressed in user reviews using the `facebook/bart-large-mnli` model. This helped us match review content to moods without training a new model.
+
+3. **Sentence Embeddings**: To enhance control and fine-tune the matching, we used `sentence-transformers` to compute cosine similarity between moods and reviews. This gave us more precise control over how closely a review matched a target mood.
+
+We decided to include all three methods in the final product so **users can choose the method that best fits their use case**—be it accuracy, speed, or explainability.
+
 To assess model performance, we manually labeled 10 restaurant-style review texts with true mood labels. We then compared the predicted mood from two models:
 
 ### 🔹 Zero-Shot Classification (`facebook/bart-large-mnli`)
