@@ -12,8 +12,8 @@ pip install transformers
 pip install transformers==4.36.2
 pip install python-dotenv
 pip install torch
-python userInterface.py
 pip install pyarrow
+Requirement: MacOS 12.3+
 
 Create a .env file in the root directory with the following variables:
 GEMINI_API_KEY= Enter your Google GEMINI_API_Key
