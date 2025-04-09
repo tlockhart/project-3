@@ -142,13 +142,18 @@ _**Note**: All images used were created via OpenAI's DALL·E model._
 - Include Yelp API for real-time restaurant data
 - Use Whisper for voice-to-mood interpretation
 - Add multilingual mood prompts
+- Expand datasets to include global restaurants
+- Add additional options (i.e. food allergies)
+- Enhance personalization features by adding users location data
 
 ---
 
 ## 🧑‍🤝‍🧑 Group Members
-- Ryan [Data Science Lead, UI Integrator]
-- [Name 2] [NLP & LLM Developer]
-- [Name 3] [Frontend & Deployment]
+- Ryan Bryan [Data Science Lead, UI Integrator]
+- Yujing Li [Frontend & Deployment]
+- Daniel Liu [NLP & LLM Developer]
+- Tony Lockhart [Semantic Classification]
+- Cathy Schassberger [Presentation]
 
 ---
 
@@ -171,6 +176,7 @@ _**Note**: All images used were created via OpenAI's DALL·E model._
 - [x] Model evaluation with accuracy scoring
 - [x] One external library not used in class (DALL·E)
 - [x] Clean GitHub structure with `.gitignore`
+- [x] Presentation
 - [x] Presentation-ready README
 
 ---
