@@ -41,6 +41,8 @@ pip install gradio
 pip install python-dotenv
 pip install openai
 pip install google-generativeai
+pip install langchain-google-genai==2.1.1
+pip install langchain 
 pip install scikit-learn
 ```
 
@@ -48,16 +50,12 @@ pip install scikit-learn
 Create a `.env` file in the root directory and add your API keys:
 ```env
 GOOGLE_API_KEY=your_google_generative_ai_key
-OPENAI_API_KEY=your_openai_api_key
 ```
 
 You can also manually enter the keys in the notebook/code using:
 ```python
 import google.generativeai as genai
 genai.configure(api_key="your_google_key_here")
-
-import openai
-openai.api_key = "your_openai_key_here"
 ```
 
 ### 5. Required Downloads
