@@ -67,6 +67,19 @@ Make sure the following models/downloads are available:
 
 ---
 
+### 6. Program Execution
+1. Open the `Complete Notebook.ipynb` Jupyter Notebook. 
+2. Click "Run All" in the Visual Studio Code or Colab. 
+3. If prompted for a kernel, select Python 3.10.4.1 and `venv`virtual environment created above.  
+4. Click the URL link to open in your browser 
+5. Program should execute as shown below  
+
+---
+
+### 7. Execution Demo
+![Screenshot1](./Pictures/project3_execution.gif)
+---
+
 ## 💡 Technologies Used
 
 | Tool / Library            | Purpose                                 |
