@@ -19,8 +19,8 @@ This project leverages modern machine learning and NLP technologies to map user 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mood-based-recommender.git
-cd mood-based-recommender
+git clone git@github.com:tlockhart/project-3.git
+cd project-3
 ```
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
@@ -65,6 +65,14 @@ Make sure the following models/downloads are available:
 - Gemini via `google.generativeai`
 - DALL·E via `openai.Image.create()`
 
+---
+
+### 6. Required Downloads
+1. **Open the `Complete Notebook.ipynb` Jupyter Notebook.**  
+2. **Run all cells in the notebook.**  
+3. **If prompted for a kernel, select Python 3.10.4.1 and `venv`virtual environment created above.**  
+4. **Click the public Gradio link to open your web browser.**  
+5. **Enter the sample SMS text into the Gradio UI and click 'Submit'.**  
 ---
 
 ## 💡 Technologies Used

@@ -33,16 +33,16 @@ if customer_reviews_df is None:
     raise ValueError("Dataset failed to load.")
 
 # Mood images (✅ exactly yours)
-mood_images = [
-    ("Adventurous", "https://thumbs.dreamstime.com/b/cute-pirate-smiley-wearing-black-pirate-scarf-eye-patch-emoticon-emoji-vector-illustration-96990738.jpg"),
-    ("Comforting", "https://previews.123rf.com/images/yayayoy/yayayoy1305/yayayoy130500001/19481706-dreamy-emoticon-with-his-head-propped-by-his-hands.jpg"),
-    ("Energizing", "https://previews.123rf.com/images/suslo/suslo1304/suslo130400008/18953821-yellow-sign-of-emotion-with-a-mohawk-and-hands.jpg"),
-    ("Romantic", "https://previews.123rf.com/images/yayayoy/yayayoy1602/yayayoy160200012/52420163-male-emoticon-blowing-a-kiss.jpg"),
-    ("Cozy", "https://previews.123rf.com/images/yayayoy/yayayoy1205/yayayoy120500007/13629388-meditating-emoticon.jpg"),
-    ("Festive", "https://thumbs.dreamstime.com/b/christmas-emoticon-bell-27501954.jpg"),
-    ("Indulgent", "https://previews.123rf.com/images/yayayoy/yayayoy1210/yayayoy121000009/15836615-emoticon-eating-an-apple.jpg"),
-    ("Refreshing", "https://png.pngtree.com/thumb_back/fh260/background/20241030/pngtree-happy-emoji-made-of-water-droplets-refreshing-playful-design-with-reflective-image_16473684.jpg"),
-]
+mood_images = {
+    "Adventurous": "Pictures/adventurous.png",
+    "Comforting":  "Pictures/comforting.png",
+    "Cozy":        "Pictures/cozy.png",
+    "Energizing":  "Pictures/energizing.png",
+    "Festive":     "Pictures/festive.png",
+    "Indulgent":   "Pictures/indulgent.png",
+    "Refreshing":  "Pictures/refreshing.png",
+    "Romantic":    "Pictures/romantic.png",
+}
 
 def getSuggestion(mood):
     user_selected_mood = mood.lower()
@@ -100,7 +100,7 @@ def create_interface():
             show_label=True
         )
 
-        mood_items = [(img_url, label) for label, img_url in mood_images]
+        mood_items = [(img_url, label) for label, img_url in mood_images.items()]
 
         def load_gallery():
             return mood_items
