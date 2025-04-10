@@ -19,8 +19,8 @@ This project leverages modern machine learning and NLP technologies to map user 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mood-based-recommender.git
-cd mood-based-recommender
+git clone git@github.com:tlockhart/project-3.git
+cd project-3
 ```
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
