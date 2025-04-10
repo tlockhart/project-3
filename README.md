@@ -77,7 +77,7 @@ Make sure the following models/downloads are available:
 ---
 
 ### 7. Execution Demo
-![Screenshot1](./Pictures/project3_execution.gif)
+[![Watch the video](https://img.icons8.com/ios-filled/100/000000/play-button-circled.png)](https://youtu.be/GvQZsyW6raE)
 ---
 
 ## 💡 Technologies Used
